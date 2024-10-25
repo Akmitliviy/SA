@@ -1,0 +1,238 @@
+﻿<Window x:Class="Lab05_SA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Risk Management App" Height="800" Width="1200">
+    <Grid Background="#e4f4d8">
+        <!-- Top Button Panel for Tab Navigation -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
+            <Button Content="Ідентифікація ризиків" Width="150" Margin="5" Click="RiskIdentificationButton_OnClick"/>
+            <Button Content="Аналіз ризиків" Width="150" Margin="5" Click="RiskAnalysisButton_OnClick"/>
+            <Button Content="Планування ризиків" Width="150" Margin="5" Click="RiskPlanningButton_OnClick"/>
+            <Button Content="Моніторинг ризиків" Width="150" Margin="5" Click="RiskTrackingButton_OnClick"/>
+        </StackPanel>
+
+        <!-- Tab Control for Risk Categories -->
+        <TabControl Name="RiskIdentificationTabControl" VerticalAlignment="Top" Margin="10,60,10,10" >
+            <!-- Tab for Technical Risks (Технічні ризики) -->
+            <TabItem Header="Визначення можливих джерел появи ризиків">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column = "0" Orientation="Vertical" Margin="5">
+                        <TextBlock Text="Технічні ризики" FontWeight="Bold" FontSize="14" />
+                        <DataGrid Name="TechnicalRisksGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,5" MaxHeight="100">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
+                                <DataGridTextColumn Header="Можливі джерела появи ризиків" Binding="{Binding RiskSource}" Width="*"/>
+                                <DataGridCheckBoxColumn Header="Значення" Binding="{Binding IsSelected}" Width="100"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" />
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Grid.Column = "0" Orientation="Vertical" Margin="5">
+                        <TextBlock Text="Вартісні ризики" FontWeight="Bold" FontSize="14"/>
+                        <DataGrid Name="CostRisksGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,5" MaxHeight="100">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
+                                <DataGridTextColumn Header="Можливі джерела появи ризиків" Binding="{Binding RiskSource}" Width="*"/>
+                                <DataGridCheckBoxColumn Header="Значення" Binding="{Binding IsSelected}" Width="100"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" />
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Grid.Column = "0" Orientation="Vertical" Margin="5">
+                        <TextBlock Text="Планові ризики" FontWeight="Bold" FontSize="14"/>
+                        <DataGrid Name="ScheduleRisksGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,5" MaxHeight="100">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
+                                <DataGridTextColumn Header="Можливі джерела появи ризиків" Binding="{Binding RiskSource}" Width="*"/>
+                                <DataGridCheckBoxColumn Header="Значення" Binding="{Binding IsSelected}" Width="100"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" />
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Grid.Column = "0" Orientation="Vertical" Margin="5">
+                        <TextBlock Text="Ризики реалізації процесів і процедур" FontWeight="Bold" FontSize="14"/>
+                        <DataGrid Name="ProcessRisksGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,5" MaxHeight="100">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
+                                <DataGridTextColumn Header="Можливі джерела появи ризиків" Binding="{Binding RiskSource}" Width="*"/>
+                                <DataGridCheckBoxColumn Header="Значення" Binding="{Binding IsSelected}" Width="100"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" />
+                    </StackPanel>
+        
+                    <!-- Summary Panel on the Right -->
+                    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Right" Width="200">
+                        <TextBlock Text="Технічні ризики:" FontWeight="Bold" />
+                        <TextBlock Text="0.00%" />
+                        <TextBlock Text="Вартісні ризики:" FontWeight="Bold" />
+                        <TextBlock Text="0.00%" />
+                        <TextBlock Text="Планові ризики:" FontWeight="Bold" />
+                        <TextBlock Text="0.00%" />
+                        <TextBlock Text="Ризики управління:" FontWeight="Bold" />
+                        <TextBlock Text="0.00%" />
+                        <TextBlock Text="Загалом:" FontWeight="Bold" />
+                        <TextBlock Text="0.00%" />
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        
+            <!-- Tab for Cost Risks (Вартісні ризики) -->
+            <TabItem Header="Ідентифікація потенційних ризикових подій">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column = "0" Orientation="Vertical" Margin="5">
+                        <TextBlock Text="Технічні ризикові події" FontWeight="Bold" FontSize="14" />
+                        <DataGrid Name="TechnicalRiskActionsGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,5" MaxHeight="100">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
+                                <DataGridTextColumn Header="Можливі ризикові події" Binding="{Binding RiskSource}" Width="*"/>
+                                <DataGridCheckBoxColumn Header="Значення" Binding="{Binding IsSelected}" Width="100"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" />
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Grid.Column = "0" Orientation="Vertical" Margin="5">
+                        <TextBlock Text="Вартісні ризикові події" FontWeight="Bold" FontSize="14"/>
+                        <DataGrid Name="CostRiskActionsGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,5" MaxHeight="100">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
+                                <DataGridTextColumn Header="Можливі ризикові події" Binding="{Binding RiskSource}" Width="*"/>
+                                <DataGridCheckBoxColumn Header="Значення" Binding="{Binding IsSelected}" Width="100"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" />
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Grid.Column = "0" Orientation="Vertical" Margin="5">
+                        <TextBlock Text="Планові ризикові події" FontWeight="Bold" FontSize="14"/>
+                        <DataGrid Name="ScheduleRiskActionsGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,5" MaxHeight="100">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
+                                <DataGridTextColumn Header="Можливі ризикові події" Binding="{Binding RiskSource}" Width="*"/>
+                                <DataGridCheckBoxColumn Header="Значення" Binding="{Binding IsSelected}" Width="100"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" />
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Grid.Column = "0" Orientation="Vertical" Margin="5">
+                        <TextBlock Text="Ризикиові події управління" FontWeight="Bold" FontSize="14"/>
+                        <DataGrid Name="ProcessRiskActionsGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,5" MaxHeight="100">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
+                                <DataGridTextColumn Header="Можливі ризикові події" Binding="{Binding RiskSource}" Width="*"/>
+                                <DataGridCheckBoxColumn Header="Значення" Binding="{Binding IsSelected}" Width="100"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" />
+                    </StackPanel>
+        
+                    <!-- Summary Panel on the Right -->
+                    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Right" Width="200">
+                        <TextBlock Text="Технічні ризики:" FontWeight="Bold" />
+                        <TextBlock Text="0.00%" />
+                        <TextBlock Text="Вартісні ризики:" FontWeight="Bold" />
+                        <TextBlock Text="0.00%" />
+                        <TextBlock Text="Планові ризики:" FontWeight="Bold" />
+                        <TextBlock Text="0.00%" />
+                        <TextBlock Text="Ризики управління:" FontWeight="Bold" />
+                        <TextBlock Text="0.00%" />
+                        <TextBlock Text="Загалом:" FontWeight="Bold" />
+                        <TextBlock Text="0.00%" />
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <TabControl Name="RiskAnalysisTabControl" VerticalAlignment="Top" Margin="10,60,10,10" Visibility="Collapsed">
+            <!-- Tab for Technical Risks (Технічні ризики) -->
+            <TabItem Header="Визначення ймовірності настння ризикових подій">
+                    <StackPanel Grid.Row="0" Grid.Column = "0" Orientation="Vertical" Margin="5">
+                        <Button Content="Reset" Width="150" HorizontalAlignment="Center" />
+                        <DataGrid Name="RiskProbabilityGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,5" MaxHeight="600">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
+                                <DataGridTextColumn Header="Можливі ризикові події" Binding="{Binding RiskSource}" Width="200"/>
+                                <DataGridTextColumn Header="per1" Binding="{Binding Per1}" Width="*"/>
+                                <DataGridTextColumn Header="per2" Binding="{Binding Per2}" Width="*"/>
+                                <DataGridTextColumn Header="per3" Binding="{Binding Per3}" Width="*"/>
+                                <DataGridTextColumn Header="per4" Binding="{Binding Per4}" Width="*"/>
+                                <DataGridTextColumn Header="per5" Binding="{Binding Per5}" Width="*"/>
+                                <DataGridTextColumn Header="per6" Binding="{Binding Per6}" Width="*"/>
+                                <DataGridTextColumn Header="per7" Binding="{Binding Per7}" Width="*"/>
+                                <DataGridTextColumn Header="per8" Binding="{Binding Per8}" Width="*"/>
+                                <DataGridTextColumn Header="per9" Binding="{Binding Per9}" Width="*"/>
+                                <DataGridTextColumn Header="per10" Binding="{Binding Per10}" Width="*"/>
+                                <DataGridTextColumn Header="ER" Binding="{Binding Er}" Width="100"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+            </TabItem>
+
+            <!-- Tab for Cost Risks (Вартісні ризики) -->
+            <TabItem Header="Оцінка ризиків та пріоритетів">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="700pt"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column = "0" Orientation="Vertical" Margin="5">
+                        <DataGrid Name="RiskAndPrioritiesAssessmentGrid" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,5" MaxHeight="100">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
+                                <DataGridTextColumn Header="Можливі ризикові події" Binding="{Binding RiskSource}" Width="*"/>
+                                <DataGridTextColumn Header="ER" Binding="{Binding Er}" Width="*"/>
+                                <DataGridTextColumn Header="LRER" Binding="{Binding Lrer}" Width="*"/>
+                                <DataGridTextColumn Header="VRER" Binding="{Binding Vrer}" Width="*"/>
+                                <DataGridTextColumn Header="Пріоритет" Binding="{Binding Priority}" Width="100"/>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                    <!-- Summary Panel on the Right -->
+                    <Grid Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Right" Width="200">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Grid.Column="0" Text="Min Vrer:" FontWeight="Bold" />
+                        <TextBlock Grid.Row="0" Grid.Column="1" Text="0.00%" />
+                        <TextBlock Grid.Row="1" Grid.Column="0" Text="Max Vrer:" FontWeight="Bold" />
+                        <TextBlock Grid.Row="1" Grid.Column="1" Text="0.00%" />
+                        <TextBlock Grid.Row="2" Grid.Column="0" Text="Планові ризики:" FontWeight="Bold" />
+                        <TextBlock Grid.Row="3" Grid.Column="0" Text="Планові ризики:" FontWeight="Bold" />
+                        <TextBlock Grid.Row="3" Grid.Column="1" Text="0.00%" />
+                        <TextBlock Grid.Row="4" Grid.Column="0" Text="Ризики управління:" FontWeight="Bold" />
+                        <TextBlock Grid.Row="4" Grid.Column="1" Text="0.00%" />
+                        <TextBlock Grid.Row="5" Grid.Column="0" Text="Загалом:" FontWeight="Bold" />
+                        <TextBlock Grid.Row="5" Grid.Column="1" Text="0.00%" />
+                    </Grid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
