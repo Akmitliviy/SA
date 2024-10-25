@@ -117,12 +117,16 @@ namespace Lab05_SA
 
         private void RiskPlanningButton_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            SelectedTab.Visibility = Visibility.Collapsed;
+            SelectedTab = RiskScheduleTabControl;
+            SelectedTab.Visibility = Visibility.Visible;
         }
 
         private void RiskTrackingButton_OnClick(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            SelectedTab.Visibility = Visibility.Collapsed;
+            SelectedTab = RiskTrackingTabControl;
+            SelectedTab.Visibility = Visibility.Visible;
         }
     }
 
