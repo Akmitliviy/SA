@@ -35,7 +35,7 @@
                                 <DataGridCheckBoxColumn Header="Значення" Binding="{Binding IsSelected}" Width="100"/>
                             </DataGrid.Columns>
                         </DataGrid>
-                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" />
+                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" Click="SelectResetAllTechnical_Click" />
                     </StackPanel>
                     <StackPanel Grid.Row="1" Grid.Column = "0" Orientation="Vertical" Margin="5">
                         <TextBlock Text="Вартісні ризики" FontWeight="Bold" FontSize="14"/>
@@ -46,7 +46,7 @@
                                 <DataGridCheckBoxColumn Header="Значення" Binding="{Binding IsSelected}" Width="100"/>
                             </DataGrid.Columns>
                         </DataGrid>
-                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" />
+                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" Click="SelectResetAllCost_Click"/>
                     </StackPanel>
                     <StackPanel Grid.Row="2" Grid.Column = "0" Orientation="Vertical" Margin="5">
                         <TextBlock Text="Планові ризики" FontWeight="Bold" FontSize="14"/>
@@ -57,7 +57,7 @@
                                 <DataGridCheckBoxColumn Header="Значення" Binding="{Binding IsSelected}" Width="100"/>
                             </DataGrid.Columns>
                         </DataGrid>
-                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" />
+                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" Click="SelectResetAllSchedule_Click"/>
                     </StackPanel>
                     <StackPanel Grid.Row="3" Grid.Column = "0" Orientation="Vertical" Margin="5">
                         <TextBlock Text="Ризики реалізації процесів і процедур" FontWeight="Bold" FontSize="14"/>
@@ -68,7 +68,7 @@
                                 <DataGridCheckBoxColumn Header="Значення" Binding="{Binding IsSelected}" Width="100"/>
                             </DataGrid.Columns>
                         </DataGrid>
-                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" />
+                        <Button Content="Select/reset all" Width="150" HorizontalAlignment="Left" Click="SelectResetAllProcess_Click"/>
                     </StackPanel>
         
                     <!-- Summary Panel on the Right -->
@@ -252,7 +252,10 @@
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
                                 <DataGridTextColumn Header="Можливі ризикові події" Binding="{Binding RiskSource}" Width="*"/>
-                                <DataGridComboBoxColumn Header="Рішення" Width="*"/>
+                                <DataGridComboBoxColumn Header="Рішення"
+                                                        SelectedItemBinding="{Binding RiskSolution}"
+                                                        ItemsSource="{Binding DataContext.RiskSolutions, RelativeSource={RelativeSource AncestorType=Window}}"
+                                                        Width="*"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </StackPanel>
@@ -262,7 +265,10 @@
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
                                 <DataGridTextColumn Header="Можливі ризикові події" Binding="{Binding RiskSource}" Width="*"/>
-                                <DataGridComboBoxColumn Header="Рішення" Width="*"/>
+                                <DataGridComboBoxColumn Header="Рішення"
+                                                        SelectedItemBinding="{Binding RiskSolution}"
+                                                        ItemsSource="{Binding DataContext.RiskSolutions, RelativeSource={RelativeSource AncestorType=Window}}"
+                                                        Width="*"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </StackPanel>
@@ -272,7 +278,10 @@
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
                                 <DataGridTextColumn Header="Можливі ризикові події" Binding="{Binding RiskSource}" Width="*"/>
-                                <DataGridComboBoxColumn Header="Рішення" Width="*"/>
+                                <DataGridComboBoxColumn Header="Рішення"
+                                                        SelectedItemBinding="{Binding RiskSolution}"
+                                                        ItemsSource="{Binding DataContext.RiskSolutions, RelativeSource={RelativeSource AncestorType=Window}}"
+                                                        Width="*"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </StackPanel>
@@ -282,7 +291,10 @@
                             <DataGrid.Columns>
                                 <DataGridTextColumn Header="№" Binding="{Binding Number}" Width="50"/>
                                 <DataGridTextColumn Header="Можливі ризикові події" Binding="{Binding RiskSource}" Width="*"/>
-                                <DataGridComboBoxColumn Header="Рішення" Width="*"/>
+                                <DataGridComboBoxColumn Header="Рішення"
+                                                        SelectedItemBinding="{Binding RiskSolution}"
+                                                        ItemsSource="{Binding DataContext.RiskSolutions, RelativeSource={RelativeSource AncestorType=Window}}"
+                                                        Width="*"/>
                             </DataGrid.Columns>
                         </DataGrid>
                     </StackPanel>
