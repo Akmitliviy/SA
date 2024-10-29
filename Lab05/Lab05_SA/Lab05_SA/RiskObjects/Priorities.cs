@@ -8,8 +8,9 @@ public class Priorities : INotifyPropertyChanged
     private double _er;
     private double _lrer;
     private double _vrer;
+    private string _priority;
 
-    public int Number { get; set; }
+    public string Name { get; set; }
     public string RiskSource { get; set; }
 
     public double Er
@@ -17,7 +18,7 @@ public class Priorities : INotifyPropertyChanged
         get => _er;
         set
         {
-            if ((_er - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _er = value;
                 OnPropertyChanged(nameof(Er));
@@ -30,7 +31,7 @@ public class Priorities : INotifyPropertyChanged
         get => _lrer;
         set
         {
-            if ((_lrer - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _lrer = value;
                 OnPropertyChanged(nameof(Lrer));
@@ -43,12 +44,18 @@ public class Priorities : INotifyPropertyChanged
         get => _vrer;
         set
         {
-            if ((_vrer - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _vrer = value;
                 OnPropertyChanged(nameof(Vrer));
             }
         }
+    }
+
+    public string Priority
+    {
+        get => _priority;
+        set => _priority = value;
     }
 
     public event PropertyChangedEventHandler? PropertyChanged;

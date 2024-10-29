@@ -7,8 +7,8 @@ public class Risk : INotifyPropertyChanged
 {
     private bool _isSelected;
 
-    public int Number { get; set; }
-    public string RiskSource { get; set; }
+    public string Name { get; init; }
+    public string RiskSource { get; init; }
 
     public bool IsSelected
     {

@@ -18,3 +18,5 @@ E:\A_University\A_term5\SA\Lab05\Lab05_SA\Lab05_SA\obj\Debug\net8.0-windows\refi
 E:\A_University\A_term5\SA\Lab05\Lab05_SA\Lab05_SA\obj\Debug\net8.0-windows\Lab05_SA.pdb
 E:\A_University\A_term5\SA\Lab05\Lab05_SA\Lab05_SA\obj\Debug\net8.0-windows\Lab05_SA.genruntimeconfig.cache
 E:\A_University\A_term5\SA\Lab05\Lab05_SA\Lab05_SA\obj\Debug\net8.0-windows\ref\Lab05_SA.dll
+E:\A_University\A_term5\SA\Lab05\Lab05_SA\Lab05_SA\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+E:\A_University\A_term5\SA\Lab05\Lab05_SA\Lab05_SA\obj\Debug\net8.0-windows\Lab05_SA_MarkupCompile.lref

@@ -15,16 +15,17 @@ public class ErStuff : INotifyPropertyChanged
     private double _per8;
     private double _per9;
     private double _per10;
+    private double _er;
 
-    public int Number { get; set; }
-    public string RiskSource { get; set; }
+    public string Name { get; init; }
+    public string RiskSource { get; init; }
 
     public double Per1
     {
         get => _per1;
         set
         {
-            if ((_per1 - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _per1 = value;
                 OnPropertyChanged(nameof(Per1));
@@ -36,7 +37,7 @@ public class ErStuff : INotifyPropertyChanged
         get => _per2;
         set
         {
-            if ((_per2 - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _per2 = value;
                 OnPropertyChanged(nameof(Per2));
@@ -48,7 +49,7 @@ public class ErStuff : INotifyPropertyChanged
         get => _per3;
         set
         {
-            if ((_per3 - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _per3 = value;
                 OnPropertyChanged(nameof(Per3));
@@ -60,7 +61,7 @@ public class ErStuff : INotifyPropertyChanged
         get => _per4;
         set
         {
-            if ((_per4 - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _per4 = value;
                 OnPropertyChanged(nameof(Per4));
@@ -72,7 +73,7 @@ public class ErStuff : INotifyPropertyChanged
         get => _per5;
         set
         {
-            if ((_per5 - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _per5 = value;
                 OnPropertyChanged(nameof(Per5));
@@ -84,7 +85,7 @@ public class ErStuff : INotifyPropertyChanged
         get => _per6;
         set
         {
-            if ((_per6 - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _per6 = value;
                 OnPropertyChanged(nameof(Per6));
@@ -96,7 +97,7 @@ public class ErStuff : INotifyPropertyChanged
         get => _per7;
         set
         {
-            if ((_per7 - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _per7 = value;
                 OnPropertyChanged(nameof(Per7));
@@ -108,7 +109,7 @@ public class ErStuff : INotifyPropertyChanged
         get => _per8;
         set
         {
-            if ((_per8 - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _per8 = value;
                 OnPropertyChanged(nameof(Per8));
@@ -120,7 +121,7 @@ public class ErStuff : INotifyPropertyChanged
         get => _per9;
         set
         {
-            if ((_per9 - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _per9 = value;
                 OnPropertyChanged(nameof(Per9));
@@ -132,10 +133,23 @@ public class ErStuff : INotifyPropertyChanged
         get => _per10;
         set
         {
-            if ((_per10 - value) > 0.00000001)
+            if (value is > 0.009 and < 1.0)
             {
                 _per10 = value;
                 OnPropertyChanged(nameof(Per10));
+            }
+        }
+    }
+
+    public double Er
+    {
+        get => _er;
+        set
+        {
+            if (value is > 0.009 and < 1.0)
+            {
+                _er = value;
+                OnPropertyChanged(nameof(Er));
             }
         }
     }
