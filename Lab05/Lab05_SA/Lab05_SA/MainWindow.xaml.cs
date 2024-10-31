@@ -551,6 +551,10 @@ namespace Lab05_SA
 
         private void CalculateRiskAnalysis(object? sender, PropertyChangedEventArgs e)
         {
+            if(e.PropertyName is "Er" or "Priority")
+            {
+                return;
+            }
             CalculateRiskAnalysis();
         }
 
@@ -602,7 +606,13 @@ namespace Lab05_SA
         }
         private void CalculateRiskTracking(object? sender, PropertyChangedEventArgs e)
         {
+            
+            if(e.PropertyName is "Er" or "Priority")
+            {
+                return;
+            }
             CalculateRiskTracking();
+        
         }
 
         private void CalculateRiskTracking()

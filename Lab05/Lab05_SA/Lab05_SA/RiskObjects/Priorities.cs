@@ -55,7 +55,11 @@ public class Priorities : INotifyPropertyChanged
     public string Priority
     {
         get => _priority;
-        set => _priority = value;
+        set
+        {
+            _priority = value;
+            OnPropertyChanged(nameof(Priority));
+        }
     }
 
     public event PropertyChangedEventHandler? PropertyChanged;
