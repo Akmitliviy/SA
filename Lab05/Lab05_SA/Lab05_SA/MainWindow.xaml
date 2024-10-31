@@ -13,7 +13,7 @@
         </ObjectDataProvider>
     </Window.Resources>
     <Window.Content>
-    <Grid Background="#e4f4d8">
+    <Grid Background="Orchid">
         <!-- Top Button Panel for Tab Navigation -->
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10">
             <Button Content="Ідентифікація ризиків" Width="150" Margin="5" Click="RiskIdentificationButton_OnClick"/>
@@ -23,7 +23,7 @@
         </StackPanel>
 
         <!-- Tab Control for Risk Categories -->
-        <TabControl Name="RiskIdentificationTabControl" VerticalAlignment="Top" Margin="10,60,10,10">
+        <TabControl Name="RiskIdentificationTabControl" VerticalAlignment="Top" Margin="10,60,10,10" Background="Aqua">
             <!-- Tab for Technical Risks (Технічні ризики) -->
             <TabItem Header="Визначення можливих джерел появи ризиків">
                 <Grid>
@@ -172,7 +172,7 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <TabControl Name="RiskAnalysisTabControl" VerticalAlignment="Top" Margin="10,60,10,10" Visibility="Collapsed">
+        <TabControl Name="RiskAnalysisTabControl" VerticalAlignment="Top" Margin="10,60,10,10" Visibility="Collapsed" Background="Aqua">
             <!-- Tab for Technical Risks (Технічні ризики) -->
             <TabItem Header="Визначення ймовірності настння ризикових подій">
                     <StackPanel Grid.Row="0" Grid.Column = "0" Orientation="Vertical" Margin="5">
@@ -246,7 +246,7 @@
             </TabItem>
         </TabControl>
         
-        <TabControl Name="RiskScheduleTabControl" VerticalAlignment="Top" Margin="10,60,10,10" Background="White" Visibility="Collapsed">
+        <TabControl Name="RiskScheduleTabControl" VerticalAlignment="Top" Margin="10,60,10,10" Visibility="Collapsed" Background="Aqua">
             <TabItem>
                 <Grid>
                     <Grid.RowDefinitions>
@@ -312,7 +312,7 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <TabControl Name="RiskTrackingTabControl" VerticalAlignment="Top" Margin="10,60,10,10" Visibility="Collapsed">
+        <TabControl Name="RiskTrackingTabControl" VerticalAlignment="Top" Margin="10,60,10,10" Visibility="Collapsed" Background="Aqua">
             <!-- Tab for Technical Risks (Технічні ризики) -->
             <TabItem Header="Результуюче оцінювання ризиків">
                     <StackPanel Grid.Row="0" Grid.Column = "0" Orientation="Vertical" Margin="5">
