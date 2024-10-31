@@ -1,0 +1,1288 @@
+{
+  "id": "Lab04_SA",
+  "description": "Lab project",
+  "documents": [
+    {
+      "id": "SRS",
+      "guid": "7cc6dfd3-c505-4681-b076-5f0a547e1da1",
+      "name": "Requirements",
+      "lastId": 32,
+      "createdOn": "2024-10-18T17:25:28.974Z",
+      "createdBy": {
+        "name": "Akmitliviy",
+        "email": "akmitliviy@gmail.com",
+        "company": ""
+      },
+      "lastChangedOn": "2024-10-18T18:03:33.853Z",
+      "lastChangedBy": {
+        "name": "Akmitliviy",
+        "email": "akmitliviy@gmail.com",
+        "company": ""
+      },
+      "data": [
+        {
+          "id": "1",
+          "guid": "5c727da5-ac96-4386-bf46-863ce2e2eccb",
+          "heading": "Вступ",
+          "text": "<p>Це вступ</p>",
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:25:29.472Z",
+              "docId": "SRS",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "heading": null,
+                "text": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:34:39.623Z"
+            },
+            {
+              "attributesChanged": {
+                "heading": "1. Вступ"
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:35:01.404Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "2",
+              "guid": "c6094714-7ae1-4a62-a0da-4846f7525b58",
+              "heading": "Призначення, мета",
+              "text": "<p>Цей документ описує вимоги до системи управління для мережі ігрових комп'ютерних клубів. Система забезпечуватиме облік комп'ютерів та ігрових консолей, розрахунок часу гри, планування технічного обслуговування, управління клієнтською базою, створення звітів і аналітику. Продукт також інтегруватиметься з системами обліку (1С, CRM) та платіжними системами.</p>",
+              "history": [
+                {
+                  "affectedNodeId": "1",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:34:44.992Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:37:07.519Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:37:19.934Z"
+                }
+              ]
+            },
+            {
+              "id": "3",
+              "guid": "137eaa17-1743-42c3-83e1-ff5501235817",
+              "heading": "Посилання",
+              "text": "<p>·<a href=\"https://east.pcisecuritystandards.org/document_library?category=pcidss&amp;document=pci_dss\">Стандарти безпеки даних платіжних систем</a></p><p>·<a href=\"https://web-room.com.ua/uk/rozrobka-crm-ta-erp-system\">Опис інтерфейсів систем обліку та CRM</a></p><p>·<a href=\"https://senet.cloud/\">SENET UI/UX&nbsp;</a></p>",
+              "history": [
+                {
+                  "affectedNodeId": "1",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:37:29.940Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:37:58.187Z"
+                },
+                {
+                  "affectedNodeId": "2",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:47:41.276Z",
+                  "docId": "SRS",
+                  "structureAction": "SwapUp"
+                },
+                {
+                  "affectedNodeId": "2",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:47:52.140Z",
+                  "docId": "SRS",
+                  "structureAction": "SwapDown"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "guid": "d98e152e-8d3a-477f-b2b9-0dc85417bb1d",
+          "heading": "Загальний опис",
+          "text": "<p>Опис продукту, його характеристика.</p>",
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:39:19.144Z",
+              "docId": "SRS",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "heading": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:39:38.389Z"
+            },
+            {
+              "attributesChanged": {
+                "text": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:39:47.725Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "5",
+              "guid": "1b000071-9338-4a37-801e-6b26a4b26843",
+              "heading": "Перспективи продукту",
+              "text": "<p>Система буде новим комплексним рішенням для управління ігровими клубами, що замінить існуючі розрізнені системи обліку часу та клієнтів. Вона інтегруватиметься з платіжними системами та системами обліку. Основною метою є оптимізація роботи клубу, покращення обслуговування клієнтів та збільшення прибутковості.</p>",
+              "history": [
+                {
+                  "affectedNodeId": "4",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:39:50.352Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:40:03.874Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:40:11.137Z"
+                }
+              ]
+            },
+            {
+              "id": "6",
+              "guid": "d9acc609-ec8a-443c-9648-3d5e94c37ba8",
+              "heading": "Характеристики продукту",
+              "text": "<p>Основні функціональні можливості продукту включають:</p><p>·Управління обліком комп'ютерів та ігрових консолей</p><p>·Розрахунок часу гри та вартості послуг</p><p>·Планування технічного обслуговування обладнання</p><p>·Управління клієнтською базою та програмою лояльності</p><p>·Звітування та аналітика</p><p>·Інтеграція з платіжними системами та системами обліку</p>",
+              "history": [
+                {
+                  "affectedNodeId": "4",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:42:36.487Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:42:44.763Z"
+                }
+              ]
+            },
+            {
+              "id": "7",
+              "guid": "15de38fd-0b35-46d3-ae58-5879cb33874f",
+              "heading": "Класи користувачів та їх характеристики",
+              "text": "<p>·Адміністратори клубу: відповідають за обслуговування клієнтів, управління часом гри та обладнанням</p><p>·Системні адміністратори: відповідають за технічне обслуговування, оновлення ігор та програмного забезпечення</p><p>·Менеджери: контролюють роботу клубу, аналізують звіти та приймають управлінські рішення</p><p>·Клієнти: можуть бронювати час гри через веб-сайт або мобільний додаток</p>",
+              "history": [
+                {
+                  "affectedNodeId": "4",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:43:04.144Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:43:10.194Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:43:23.478Z"
+                }
+              ]
+            },
+            {
+              "id": "8",
+              "guid": "ed3fe9c1-d060-48e6-879b-b9a35b9e4868",
+              "heading": "Середовище функціонування",
+              "text": "<p>Продукт працюватиме на Windows-серверах та клієнтських комп'ютерах. Система підтримуватиме роботу з базами даних SQL Server та забезпечуватиме веб-інтерфейс для доступу через браузер.</p>",
+              "history": [
+                {
+                  "affectedNodeId": "4",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:43:37.813Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:43:47.098Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:43:55.114Z"
+                }
+              ]
+            },
+            {
+              "id": "9",
+              "guid": "8e4fd90c-ba85-41b9-8a0a-daf0d970c225",
+              "heading": "Обмеження проектування та реалізації",
+              "text": "<p>·Вимоги безпеки включають захист персональних даних клієнтів та платіжної інформації</p><p>·Система має бути здатною працювати локально при відсутності інтернет-з'єднання</p><p>·Необхідно забезпечити сумісність з різними ігровими платформами та системами</p>",
+              "history": [
+                {
+                  "affectedNodeId": "4",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:44:46.507Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:44:54.289Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "10",
+          "guid": "5aeac6f8-3147-4245-8f88-33d58b512b55",
+          "heading": "Характеристики системи",
+          "text": "<p>Опис функціоналу системи</p>",
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:45:21.285Z",
+              "docId": "SRS",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:45:30.035Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": true
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:45:41.159Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:45:47.089Z"
+            },
+            {
+              "attributesChanged": {
+                "deleted": true
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:46:46.907Z"
+            },
+            {
+              "affectedNodeId": "4",
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:47:55.465Z",
+              "docId": "SRS",
+              "structureAction": "SwapDown"
+            },
+            {
+              "attributesChanged": {
+                "heading": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:48:38.903Z"
+            },
+            {
+              "attributesChanged": {
+                "text": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T17:48:47.258Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "11",
+              "guid": "c98e0fe5-b92d-446d-b300-6c921c1cedf1",
+              "heading": "Управління обліком комп'ютерів та ігрових консолей",
+              "history": [
+                {
+                  "affectedNodeId": "10",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:48:54.594Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:49:18.244Z"
+                }
+              ],
+              "children": [
+                {
+                  "id": "12",
+                  "guid": "45126841-5ba7-461d-b388-dc055f3323b7",
+                  "heading": "Опис і пріоритет",
+                  "text": "<p>Опис: Ця характеристика дозволяє реєструвати та керувати інформацією про комп'ютери, консолі та інше ігрове обладнання. Забезпечує моніторинг стану обладнання та встановленого програмного забезпечення.</p><p><br></p><p>Пріоритет: Високий</p>",
+                  "history": [
+                    {
+                      "affectedNodeId": "11",
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:49:39.692Z",
+                      "docId": "SRS",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null
+                      },
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:49:44.496Z"
+                    },
+                    {
+                      "attributesChanged": {
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:49:51.400Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "13",
+                  "guid": "38e890ae-9635-44d2-b47f-fba6893a7230",
+                  "heading": "Послідовності дія/відгук",
+                  "text": "<p>·Адміністратор додає нове обладнання через інтерфейс системи</p><p>·Система автоматично сканує конфігурацію та встановлене ПЗ</p><p>·Адміністратор може переглядати статус обладнання та керувати налаштуваннями</p>",
+                  "history": [
+                    {
+                      "affectedNodeId": "11",
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:52:54.354Z",
+                      "docId": "SRS",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null,
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:53:00.541Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "14",
+                  "guid": "e9c2dde3-918c-499b-a791-4c8b0e2a6c17",
+                  "heading": "Функціональні вимоги",
+                  "history": [
+                    {
+                      "affectedNodeId": "11",
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:53:08.818Z",
+                      "docId": "SRS",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null
+                      },
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:53:11.946Z"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "15",
+                      "guid": "25d3b10e-8927-43dc-992d-901e804b3c02",
+                      "heading": "Автовизначення характеристик обладнання",
+                      "text": "<p>Система повинна автоматично визначати характеристики обладнання</p>",
+                      "history": [
+                        {
+                          "affectedNodeId": "14",
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:56:14.390Z",
+                          "docId": "SRS",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": null
+                          },
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:56:27.273Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:56:33.385Z"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "16",
+                      "guid": "52e2fa35-c24b-45d6-935c-fae9bdf24561",
+                      "heading": "Відстеження часу роботи та технічного стану",
+                      "text": "<p>Система повинна відстежувати час роботи обладнання та планувати технічне обслуговування</p>",
+                      "history": [
+                        {
+                          "affectedNodeId": "14",
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:56:48.215Z",
+                          "docId": "SRS",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": null
+                          },
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:56:51.904Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:56:57.177Z"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "17",
+                      "guid": "ee913c7f-9f23-40ce-8426-62d3a9304c48",
+                      "heading": "Віддалене управління",
+                      "text": "<p>Система повинна підтримувати віддалене управління комп'ютерами та консолями</p>",
+                      "history": [
+                        {
+                          "affectedNodeId": "14",
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:57:09.004Z",
+                          "docId": "SRS",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": null
+                          },
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:57:24.479Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:57:40.667Z"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "18",
+              "guid": "63901fa9-e1c1-4011-9ef0-7e97f275e97f",
+              "heading": "Розрахунок часу гри та вартості послуг",
+              "history": [
+                {
+                  "affectedNodeId": "10",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:58:16.971Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T17:58:21.738Z"
+                }
+              ],
+              "children": [
+                {
+                  "id": "19",
+                  "guid": "bbdb6e35-f37c-4c30-b71b-a29919e660a4",
+                  "heading": "Опис і пріоритет",
+                  "text": "<p>Опис: Автоматизована система обліку часу гри та розрахунку вартості послуг з урахуванням тарифів та знижок.</p><p><br></p><p>Пріоритет: Високий</p>",
+                  "history": [
+                    {
+                      "affectedNodeId": "18",
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:58:36.646Z",
+                      "docId": "SRS",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null,
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:58:42.578Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "20",
+                  "guid": "586e4511-7f52-40f5-9eb6-838b99944a32",
+                  "heading": "Послідовності дія/відгук",
+                  "text": "<p>·Клієнт обирає місце та починає сеанс гри</p><p>·Система відстежує час та розраховує вартість</p><p>·Після завершення сеансу система формує рахунок</p>",
+                  "history": [
+                    {
+                      "affectedNodeId": "18",
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:58:54.653Z",
+                      "docId": "SRS",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null,
+                        "text": null
+                      },
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:58:59.874Z"
+                    }
+                  ]
+                },
+                {
+                  "id": "21",
+                  "guid": "85ffd05d-d12f-440b-bcc1-f3a865004a90",
+                  "heading": "Функціональні вимоги",
+                  "history": [
+                    {
+                      "affectedNodeId": "18",
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:59:09.381Z",
+                      "docId": "SRS",
+                      "structureAction": "Create"
+                    },
+                    {
+                      "attributesChanged": {
+                        "heading": null
+                      },
+                      "changedBy": {
+                        "company": "",
+                        "email": "akmitliviy@gmail.com",
+                        "name": "Akmitliviy"
+                      },
+                      "changedOn": "2024-10-18T17:59:10.891Z"
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "22",
+                      "guid": "4460b41a-d83d-4b66-bb85-6aa223b94655",
+                      "heading": "Тарифи",
+                      "text": "<p>Система повинна підтримувати різні тарифні плани та знижки</p>",
+                      "history": [
+                        {
+                          "affectedNodeId": "21",
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:59:18.912Z",
+                          "docId": "SRS",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": null
+                          },
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:59:39.025Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:59:45.719Z"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "23",
+                      "guid": "23d23ee5-eddf-4a47-a300-1ef05c857b19",
+                      "heading": "Завершення сеансу",
+                      "text": "<p>Система повинна забезпечувати автоматичне завершення сеансу після закінчення оплаченого часу</p>",
+                      "history": [
+                        {
+                          "affectedNodeId": "21",
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:59:54.481Z",
+                          "docId": "SRS",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": null
+                          },
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T17:59:57.703Z"
+                        },
+                        {
+                          "attributesChanged": {
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T18:00:02.882Z"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "24",
+                      "guid": "28cff87d-c2d4-4605-9310-2f32864f37f4",
+                      "heading": "Попереднє бронювання",
+                      "text": "<p>Система повинна підтримувати попереднє бронювання часу гри</p>",
+                      "history": [
+                        {
+                          "affectedNodeId": "21",
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T18:00:12.858Z",
+                          "docId": "SRS",
+                          "structureAction": "Create"
+                        },
+                        {
+                          "attributesChanged": {
+                            "heading": null,
+                            "text": null
+                          },
+                          "changedBy": {
+                            "company": "",
+                            "email": "akmitliviy@gmail.com",
+                            "name": "Akmitliviy"
+                          },
+                          "changedOn": "2024-10-18T18:00:17.831Z"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "25",
+          "guid": "39bae4da-d6db-46c5-b309-8ae58fc2e468",
+          "heading": "Вимоги зовнішніх інтерфейсів",
+          "text": "<p>Вимоги до взаємодії програми з користувачами, системою та іншим програмним забезпеченням.</p>",
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T18:00:42.416Z",
+              "docId": "SRS",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "heading": null,
+                "text": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T18:00:50.886Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "26",
+              "guid": "d14051e4-ba69-4151-b5d1-312fc80f529a",
+              "heading": "Користувацькі інтерфейси",
+              "text": "<p>·Інтерфейс адміністратора: панель управління з відображенням статусу всіх комп'ютерів та консолей</p><p>·Клієнтський інтерфейс: простий інтерфейс для вибору ігор та управління часом</p><p>·Веб-портал: для бронювання часу та перегляду історії відвідувань</p>",
+              "history": [
+                {
+                  "affectedNodeId": "25",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:01:01.175Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:01:04.876Z"
+                },
+                {
+                  "attributesChanged": {
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:01:10.903Z"
+                }
+              ]
+            },
+            {
+              "id": "27",
+              "guid": "f2b52d4c-cbdb-4f33-b1a0-7007981728f8",
+              "heading": "Апаратні інтерфейси",
+              "text": "<p>·Підтримка різних конфігурацій ігрових комп'ютерів та консолей</p><p>·Інтеграція з системами контролю доступу та платіжними терміналами</p>",
+              "history": [
+                {
+                  "affectedNodeId": "25",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:01:24.163Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:01:28.920Z"
+                }
+              ]
+            },
+            {
+              "id": "28",
+              "guid": "57f35453-b0b8-4ff3-b43e-64da3bd68037",
+              "heading": "Програмні інтерфейси",
+              "text": "<p>·Інтеграція з системами Steam, Epic Games та іншими ігровими платформами</p><p>·API для інтеграції з системами обліку та CRM</p>",
+              "history": [
+                {
+                  "affectedNodeId": "25",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:02:02.909Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:02:07.290Z"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "29",
+          "guid": "85e8dfae-8db2-48de-bed7-4def29f8b325",
+          "heading": "Інші нефункціональні вимоги",
+          "text": "<p>Нефункцвональні вимоги, що мають бути дотримані системою.</p>",
+          "history": [
+            {
+              "affectedNodeId": "#",
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T18:02:26.430Z",
+              "docId": "SRS",
+              "structureAction": "Create"
+            },
+            {
+              "attributesChanged": {
+                "heading": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T18:02:31.710Z"
+            },
+            {
+              "attributesChanged": {
+                "text": null
+              },
+              "changedBy": {
+                "company": "",
+                "email": "akmitliviy@gmail.com",
+                "name": "Akmitliviy"
+              },
+              "changedOn": "2024-10-18T18:02:36.571Z"
+            }
+          ],
+          "children": [
+            {
+              "id": "30",
+              "guid": "2a1d7f5f-4a35-4ddf-a86d-0614c4e2c8a9",
+              "heading": "Вимоги продуктивності",
+              "text": "<p>·Система повинна підтримувати одночасну роботу до 100 ігрових місць</p><p>·Час відгуку системи не повинен перевищувати 1 секунду</p>",
+              "history": [
+                {
+                  "affectedNodeId": "29",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:02:48.287Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:02:52.971Z"
+                }
+              ]
+            },
+            {
+              "id": "31",
+              "guid": "051f693f-8e63-4051-9d64-0a408afad954",
+              "heading": "Вимоги надійності",
+              "text": "<p>·Система повинна працювати 24/7 з доступністю 99.9%</p><p>·Автоматичне резервне копіювання даних кожні 6 годин</p>",
+              "history": [
+                {
+                  "affectedNodeId": "29",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:03:14.852Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:03:19.433Z"
+                }
+              ]
+            },
+            {
+              "id": "32",
+              "guid": "279b0087-15b9-4359-808b-461e987df28b",
+              "heading": "Вимоги безпеки",
+              "text": "<p>·Шифрування персональних даних клієнтів</p><p>·Розмежування прав доступу для різних категорій користувачів</p>",
+              "history": [
+                {
+                  "affectedNodeId": "29",
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:03:29.642Z",
+                  "docId": "SRS",
+                  "structureAction": "Create"
+                },
+                {
+                  "attributesChanged": {
+                    "heading": null,
+                    "text": null
+                  },
+                  "changedBy": {
+                    "company": "",
+                    "email": "akmitliviy@gmail.com",
+                    "name": "Akmitliviy"
+                  },
+                  "changedOn": "2024-10-18T18:03:33.853Z"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "attributes": {
+      },
+      "templateColumns": {
+      },
+      "views": {
+        "Primary": {
+          "columns": [
+            {
+              "columnId": "id",
+              "width": 65
+            },
+            {
+              "columnId": "description",
+              "width": 500
+            }
+          ],
+          "default": true
+        }
+      }
+    }
+  ],
+  "attachments": {
+  },
+  "traceability": {
+    "reference": {
+      "name": "Reference",
+      "source": "References",
+      "target": "Referenced by"
+    }
+  },
+  "metadata": {
+    "format": "2.17",
+    "saveHistory": true
+  }
+}
