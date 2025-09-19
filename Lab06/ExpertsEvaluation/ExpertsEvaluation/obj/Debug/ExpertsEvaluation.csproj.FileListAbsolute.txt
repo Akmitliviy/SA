@@ -1,0 +1,88 @@
+C:\Users\Viking\Desktop\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe.config
+C:\Users\Viking\Desktop\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe
+C:\Users\Viking\Desktop\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.pdb
+C:\Users\Viking\Desktop\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csprojResolveAssemblyReference.cache
+C:\Users\Viking\Desktop\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Form1.resources
+C:\Users\Viking\Desktop\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Properties.Resources.resources
+C:\Users\Viking\Desktop\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.GenerateResource.Cache
+C:\Users\Viking\Desktop\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.exe
+C:\Users\Viking\Desktop\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.pdb
+G:\Универ\3 курс\Аналіз вимог\lab6_a\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe.config
+G:\Универ\3 курс\Аналіз вимог\lab6_a\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe
+G:\Универ\3 курс\Аналіз вимог\lab6_a\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.pdb
+G:\Универ\3 курс\Аналіз вимог\lab6_a\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csprojResolveAssemblyReference.cache
+G:\Универ\3 курс\Аналіз вимог\lab6_a\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Form1.resources
+G:\Универ\3 курс\Аналіз вимог\lab6_a\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Properties.Resources.resources
+G:\Универ\3 курс\Аналіз вимог\lab6_a\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.GenerateResource.cache
+G:\Универ\3 курс\Аналіз вимог\lab6_a\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.CoreCompileInputs.cache
+G:\Универ\3 курс\Аналіз вимог\lab6_a\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.exe
+G:\Универ\3 курс\Аналіз вимог\lab6_a\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.pdb
+D:\study\RA\lab6\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe.config
+D:\study\RA\lab6\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe
+D:\study\RA\lab6\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.pdb
+D:\study\RA\lab6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csprojAssemblyReference.cache
+D:\study\RA\lab6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Form1.resources
+D:\study\RA\lab6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Properties.Resources.resources
+D:\study\RA\lab6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.GenerateResource.cache
+D:\study\RA\lab6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.exe
+D:\study\RA\lab6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.pdb
+C:\Users\alexp\Documents\Універ\АВПЗ\лаба 6\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe.config
+C:\Users\alexp\Documents\Універ\АВПЗ\лаба 6\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe
+C:\Users\alexp\Documents\Універ\АВПЗ\лаба 6\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.pdb
+C:\Users\alexp\Documents\Універ\АВПЗ\лаба 6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.AssemblyReference.cache
+C:\Users\alexp\Documents\Універ\АВПЗ\лаба 6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.SuggestedBindingRedirects.cache
+C:\Users\alexp\Documents\Універ\АВПЗ\лаба 6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Form1.resources
+C:\Users\alexp\Documents\Універ\АВПЗ\лаба 6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Properties.Resources.resources
+C:\Users\alexp\Documents\Універ\АВПЗ\лаба 6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.GenerateResource.cache
+C:\Users\alexp\Documents\Універ\АВПЗ\лаба 6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.CoreCompileInputs.cache
+C:\Users\alexp\Documents\Універ\АВПЗ\лаба 6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.exe
+C:\Users\alexp\Documents\Універ\АВПЗ\лаба 6\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.pdb
+C:\Універ\АВПЗ\Лаб 6\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe.config
+C:\Універ\АВПЗ\Лаб 6\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe
+C:\Універ\АВПЗ\Лаб 6\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.pdb
+C:\Універ\АВПЗ\Лаб 6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.AssemblyReference.cache
+C:\Універ\АВПЗ\Лаб 6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.SuggestedBindingRedirects.cache
+C:\Універ\АВПЗ\Лаб 6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Form1.resources
+C:\Універ\АВПЗ\Лаб 6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Properties.Resources.resources
+C:\Універ\АВПЗ\Лаб 6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.GenerateResource.cache
+C:\Універ\АВПЗ\Лаб 6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.CoreCompileInputs.cache
+C:\Універ\АВПЗ\Лаб 6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.exe
+C:\Універ\АВПЗ\Лаб 6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.pdb
+C:\Users\roman\OneDrive\Робочий стіл\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe.config
+C:\Users\roman\OneDrive\Робочий стіл\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe
+C:\Users\roman\OneDrive\Робочий стіл\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.pdb
+C:\Users\roman\OneDrive\Робочий стіл\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.AssemblyReference.cache
+C:\Users\roman\OneDrive\Робочий стіл\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Form1.resources
+C:\Users\roman\OneDrive\Робочий стіл\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Properties.Resources.resources
+C:\Users\roman\OneDrive\Робочий стіл\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.GenerateResource.cache
+C:\Users\roman\OneDrive\Робочий стіл\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.CoreCompileInputs.cache
+C:\Users\roman\OneDrive\Робочий стіл\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.exe
+C:\Users\roman\OneDrive\Робочий стіл\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.pdb
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe.config
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe.manifest
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.application
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.pdb
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.AssemblyReference.cache
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Form1.resources
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Properties.Resources.resources
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.GenerateResource.cache
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.CoreCompileInputs.cache
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.exe.manifest
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.application
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.exe
+D:\NULP\Term_5\AVPZ\Labs\Lab6\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.pdb
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe.config
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe.manifest
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.application
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.exe
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\bin\Debug\ExpertsEvaluation.pdb
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.AssemblyReference.cache
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Form1.resources
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.Properties.Resources.resources
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.GenerateResource.cache
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.csproj.CoreCompileInputs.cache
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.exe.manifest
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.application
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.exe
+E:\A_University\A_term5\SA\Lab06\ExpertsEvaluation\ExpertsEvaluation\obj\Debug\ExpertsEvaluation.pdb

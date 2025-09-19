@@ -1,0 +1,263 @@
+  /*Обнулення*/
+  *{
+      padding: 0;
+      margin: 0;
+      border: 0;
+    }
+    *,*:before,*:after{
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    :focus,:active{outline: none;}
+    a:focus,a:active{outline: none;}
+    nav,footer,header,aside{display: block;}
+    html,body{
+      height: 100%;
+      width: 100%;
+      font-size: 100%;
+      line-height: 1;
+      font-size: 14px;
+      -ms-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    input,button,textarea{font-family:inherit;}
+    input::-ms-clear{display: none;}
+    button{cursor: pointer;}
+    button::-moz-focus-inner {padding:0;border:0;}
+    a, a:visited{text-decoration: none;}
+    a:hover{text-decoration: none;}
+    ul li{list-style: none;}
+    img{vertical-align: top;}
+    h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+  body {
+      background-color: #D6DEEE;
+      overflow: hidden; /* Заборона прокрутки на рівні тіла сторінки */
+      height: 100%;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+  }
+
+  .navbar{
+    height: 10%; 
+  }
+
+  .nav-item img {
+      width: 25%;
+  }
+
+  #wrapper {
+      height: 85%; /* 100% висота відносно видимого вікна */
+      overflow: hidden; /* Заборона прокрутки в обгортці */
+  }
+
+  #content-wrapper {
+      /*height: calc(100vh - 56px); /* 56px - висота вашого навбару */
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative; /* Зробимо wrapper відносної позиції */
+  }
+
+  #content {
+      flex-grow: 1;
+      overflow-y: auto;
+      overflow: hidden;
+  }
+
+  .footer {
+      height: 5%; 
+      background-color: transparent; /* Колір фону вашого футера */
+      padding: 10px;
+      text-align: center;
+      margin-top: auto; /* Розміщення футера внизу контейнера */
+  }
+
+  .nav-item span {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-left: 5px;
+  }
+
+  .nav-item div {
+    color: #13293D;
+    text-decoration: none;
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px;
+  }
+
+  .nav-item img {
+    width: 20%;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .navbar span {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 5px;
+    color:#13293D;
+  }
+
+  .tabs {
+    position: absolute;
+    top: 0;
+    left: 98.35%;
+    transform: translateX(-100%);
+    z-index: 2;
+    background-color: #D6DEEE;
+    display: flex;
+    flex-direction: row;
+    padding-top: 38px;
+    width: max-content; /* Змінено на max-content */
+  }
+
+
+.sidebar-toggled .tabs {
+      left: 98% !important;
+}
+  
+
+  .tablink {
+    background-color: rgb(24, 173, 116);
+    color: rgb(24, 173, 116);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 8px;
+    font-size: 13px;
+    font-weight: 600;
+    box-sizing: border-box;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .tablink:hover {
+    background-color: rgb(24, 173, 116)
+    }
+
+
+#defaultOpen {
+  background-color: white;
+  color: #8EAFE8;
+}
+
+.tabcontent {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-right: 5%;
+  margin-left: 3%;
+}
+
+#criteria-content,
+#field-diagram-content,
+#usability-diagram-content,
+#programming-diagram-content,
+#users-diagram-content,
+#aggregated-diagram-content,
+#generalized-diagram-content,
+#expert-evaluation-content,
+#user-evaluation-content,
+#expert-type-content,
+#calculation-results-content{
+    background-color: white;
+    height: 100%;
+    width: 95%;
+    overflow: hidden;
+  }
+
+p{
+  color: #8EAFE8;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 5px 5px 0px;
+  text-align: center;
+}
+
+.table-container {
+  max-height: 100px; /* Set a max height for the container */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-bottom: 15px;
+}
+
+table, th, td {
+  border: 2px solid black;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: black;
+  padding: 5px;
+  text-align: center;
+}
+
+.select-all{
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  border-radius: 20px;
+  border: solid #8EAFE8 2px;
+  background-color: white;
+  width: 21%;
+  margin-left: auto;
+  margin-bottom: 5px;
+  margin-right: 150px;
+  padding: 5px;
+}
+
+
+/* Зелений колір для низького пріоритету */
+.low-priority {
+  background-color: #CCFFE5; /* Зелений колір */
+}
+
+/* Жовтий колір для середнього пріоритету */
+.medium-priority {
+  background-color: #FFFFCC; /* Жовтий колір */
+}
+
+/* Червоний колір для високого пріоритету */
+.high-priority {
+  background-color: #FFCCCC; /* Червоний колір */
+}
+
+input {
+  background-color: transparent;
+}
+
+.invalid-input {
+  background-color: #ffe6e6; /* Фон червоного кольору */
+  color: red; /* Колір тексту червоний */
+}
+
+.table-2,
+.table-3 {
+  width: 100%; /* або будь-яке інше значення, яке вам потрібно */
+  height: 433px; /* або будь-яке інше значення, яке вам потрібно */
+  overflow: auto; /* додати горизонтальний та вертикальний scrollbars, коли вони необхідні */
+  padding-right: 20px;
+}
+
+.table-1 tr td:last-child,
+.table-2 tr td:last-child,
+.table-3 tr td:last-child,
+.table-4 tr td:last-child {
+  background-color: #F2F6FF;
+  font-weight: bold; 
+}
+
+.centered-items {
+  display: flex;
+  align-items: center;     /* Center items vertically */
+  flex-direction: column;  /* Stack children vertically */
+}
+
+.canvaDiagram {
+  margin-top: 80px;
+}

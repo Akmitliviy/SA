@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Results visualization</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.3.0/math.min.js"></script>
+    <link rel="shortcut icon" type="image/png" href="img/icon.png">
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="css/ResultsVisualization.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    
+    <!-- Topbar -->
+    <nav class="navbar">
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="d-flex align-items-center justify-content-left">
+            <img class="pl-4" src="img/icon.png" alt="icon">
+            <span class="ml-2">Візуалізація результатів оцінки якості ПЗ</span>
+        </div>
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+
+        </ul>
+    </nav>
+
+    <div class="tabs">
+        <button class="tablink" onclick="openPage('field-diagram-content', this)"  id="defaultOpen" title="Діаграма для експертів галузі">Діаграма 1</button>
+        <button class="tablink" onclick="openPage('usability-diagram-content', this)" title="Діаграма для експертів зручності">Діаграма 2</button>
+        <button class="tablink" onclick="openPage('programming-diagram-content', this)" title="Діаграма для експертів з програмування">Діаграма 3</button>
+        <button class="tablink" onclick="openPage('users-diagram-content', this)" title="Діаграма для потенційних користувачів">Діаграма 4</button>
+        <button class="tablink" onclick="openPage('aggregated-diagram-content', this)"title="Діаграма зведених показників експертів">Діаграма 5</button>
+        <button class="tablink" onclick="openPage('generalized-diagram-content', this)" title="Діаграма узагальнених показників експертів">Діаграма 6</button>
+    </div>
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav  sidebar  accordion" id="accordionSidebar">
+
+            <li class="nav-item">
+                <a class="nav-link pb-2"  href="Criteria.html">
+                    <div class="d-flex align-items-center justify-content-left">
+                        <span>Критерії</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link pt-2 pb-2" href="Evaluation.html">
+                    <div class="d-flex align-items-center justify-content-left">
+                        <span>Оцінювання</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link pt-2 pb-2" href="EvaluationCriteria.html">
+                    <div class="d-flex align-items-center justify-content-left">
+                        <span>Критерії оцінювання</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link pt-2 pb-2" href="SoftwareQuality.html">
+                    <div class="d-flex align-items-center justify-content-left">
+                        <span>Якість ПЗ</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link pt-2 pb-2">
+                    <div class="d-flex align-items-center justify-content-left" style="background-color: #8EAFE8; color: white;">
+                        <span>Полярні діаграми</span>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <div id="field-diagram-content" class="tabcontent" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
+                    <div style="width: 60%;">
+                        <p class="mb-4" style="margin-top: 50px;">Діграма для експертів галузі</p>
+                        <div class="ml-4 table-7"></div>
+                    </div>
+                    <div style="width: 40%; display: flex; justify-content: right; align-items: center; flex-direction: column;">
+                        <canvas class="canvaDiagram" id="diagram1"></canvas>
+                        <p id="diagram1-data"></p>
+                    </div>
+                </div>
+                <div id="usability-diagram-content" class="tabcontent" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
+                    <div style="width: 60%;">
+                        <p class="mb-4" style="margin-top: 50px;">Діграма для експертів зручності</p>
+                        <div class="ml-4 table-8"></div>
+                    </div>
+                    <div style="width: 40%; display: flex; justify-content: right; align-items: center; flex-direction: column;">
+                        <canvas class="canvaDiagram" id="diagram2"></canvas>
+                        <p id="diagram2-data"></p>
+                    </div>
+                </div>
+                <div id="programming-diagram-content" class="tabcontent" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
+                    <div style="width: 60%;">
+                        <p class="mb-4" style="margin-top: 50px;">Діграма для експертів з програмування</p>
+                        <div class="ml-4 table-9"></div>
+                    </div>
+                    <div style="width: 40%; display: flex; justify-content: right; align-items: center; flex-direction: column;">
+                        <canvas class="canvaDiagram" id="diagram3"></canvas>
+                        <p id="diagram3-data"></p>
+                    </div>
+                </div>
+                <div id="users-diagram-content" class="tabcontent" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
+                    <div style="width: 60%;">
+                        <p class="mb-4" style="margin-top: 50px;">Діграма для потенційних користувачів</p>
+                        <div class="ml-4 table-10"></div>
+                    </div>
+                    <div style="width: 40%; display: flex; justify-content: right; align-items: center; flex-direction: column;">
+                        <canvas class="canvaDiagram" id="diagram4"></canvas>
+                        <p id="diagram4-data"></p>
+                    </div>
+                </div>
+                <div id="aggregated-diagram-content" class="tabcontent" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
+                    <div style="width: 60%;">
+                        <p class="mb-4" style="margin-top: 50px;">Діграма зведених показників експертів</p>
+                        <p id="diagram5-data" style="margin-right: auto; margin-left: 100px; margin-top:150px;"></p>
+                    </div>
+                    <div style="width: 40%; display: flex; justify-content: left; align-items: center; flex-direction: column;">
+                        <canvas class="canvaDiagram" id="diagram5" style="margin-left: auto; margin-right: 50px;"></canvas>
+                    </div>
+                </div>
+                <div id="generalized-diagram-content" class="tabcontent" style="border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;">
+                    <div style="width: 60%;">
+                        <p class="mb-4" style="margin-top: 50px;">Діграма узагальнених показників експертів</p>
+                        <div class="ml-4 table-12"></div>
+                    </div>
+                    <div style="width: 40%; display: flex; justify-content: right; align-items: center; flex-direction: column;">
+                        <canvas class="canvaDiagram" id="diagram6"></canvas>
+                        <p id="diagram6-data"></p>
+                    </div>
+                </div>
+
+                <!-- Page Heading -->
+            </div>
+            <!-- End of Main Content -->
+        </div>
+        <!-- End of Content Wrapper -->
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Footer -->
+    <footer class="footer">
+
+            <div class="copyright text-left my-auto">
+                <span>Performed by student of group PZ36 Danyliuk Yulian</span>
+            </div>
+        
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.js"></script>
+    <script src="js/tabs.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/drawDiagram.js"></script>
+    <script src="js/diagram1.js"></script>
+
+    <script src="js/createTable7.js"></script>
+    <script src="js/createTable8.js"></script>
+
+</body>
+
+</html>
